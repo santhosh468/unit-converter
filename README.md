@@ -59,7 +59,7 @@ A modern, minimal web application for converting between various measurement uni
   ```
  ## Screenshots 📷
  
- ![Homepage]("C:\Users\santh\OneDrive\Pictures\Screenshots\Screenshot 2025-05-10 201258.png")
+ ![Homepage]("Screenshot 2025-05-10 201258.png")
 
  ![Weight Converter]("C:\Users\santh\OneDrive\Pictures\Screenshots\Screenshot 2025-05-10 201346.png")
 
