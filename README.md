@@ -41,9 +41,10 @@ A modern, minimal web application for converting between various measurement uni
 ## Installation & Setup ⚙️
 
 1. **Clone Repository**
-   ```bash
+  ```bash
    git clone https://github.com/yourusername/unit-converter.git
    cd unit-converter
+  ```
 2. **Install Dependencies**
   ```bash
   pip install -r requirements.txt
@@ -53,9 +54,9 @@ A modern, minimal web application for converting between various measurement uni
   python app.py
   ```
 4. **Access in Browser
-   ```bash
+  ```bash
    http://localhost:5000
-   ```
+  ```
  ## Screenshots 📷
  
  ![Homepage]("C:\Users\santh\OneDrive\Pictures\Screenshots\Screenshot 2025-05-10 201258.png")
@@ -85,3 +86,9 @@ A modern, minimal web application for converting between various measurement uni
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
+## Credits 🙏
+**Google Fonts:** Inter for typography.
+
+**Material Icons:** Used for category icons.
+
+**Flask:** Backend framework.
