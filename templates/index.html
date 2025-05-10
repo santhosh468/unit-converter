@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <main class="minimal-home">
+        <h1 class="main-title">Unit Converter</h1>
+        <div class="card-rows-fixed">
+          <div class="card-row-fixed">
+            <a href="/length" class="card minimal-card card-length">
+              <span class="material-icons card-icon">straighten</span>
+              <span>Length</span>
+            </a>
+            <a href="/weight" class="card minimal-card card-weight">
+              <span class="material-icons card-icon">scale</span>
+              <span>Weight</span>
+            </a>
+            <a href="/temperature" class="card minimal-card card-temp">
+              <span class="material-icons card-icon">thermostat</span>
+              <span>Temp</span>
+            </a>
+          </div>
+          <div class="card-row-fixed">
+            <a href="/area" class="card minimal-card card-area">
+              <span class="material-icons card-icon">square_foot</span>
+              <span>Area</span>
+            </a>
+            <a href="/volume" class="card minimal-card card-volume">
+              <span class="material-icons card-icon">water_drop</span>
+              <span>Volume</span>
+            </a>
+          </div>
+        </div>
+    </main>
+</body>
+</html>

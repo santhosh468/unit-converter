@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }} Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="converter-container {{ theme_class }}">
+        <h1 class="converter-title">{{ title }} Converter</h1>
+        <form method="POST" class="converter-form">
+            <input type="number" name="value" class="input-long" placeholder="Enter value" step="any" required value="{{ input_value|default('') }}">
+            <div class="unit-row">
+                <div class="unit-box">
+                    <select name="from_unit">
+                        {% for unit in units %}
+                            <option value="{{ unit }}" {% if from_unit == unit %}selected{% endif %}>{{ unit }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <span class="unit-arrow">→</span>
+                <div class="unit-box">
+                    <select name="to_unit">
+                        {% for unit in units %}
+                            <option value="{{ unit }}" {% if to_unit == unit %}selected{% endif %}>{{ unit }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="convert-button">Convert</button>
+        </form>
+        {% if result is defined %}
+        <div class="result-section">
+            <div class="result-label">RESULT</div>
+            <div class="result-row">
+                <span class="result-value-box">{{ input_value|default('') }} <span class="result-unit">{{ from_unit|default('') }}</span></span>
+                <span class="result-equals">=</span>
+                <span class="result-value-box">{{ result if result is not none else '' }} <span class="result-unit">{{ to_unit|default('') }}</span></span>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
