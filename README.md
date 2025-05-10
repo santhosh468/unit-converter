@@ -95,4 +95,4 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## Project from [roadmap.sh](https://roadmap.sh/projects/unit-converter)
 
-**Contact [here](mailto:santhoshpakkiri550@gmail.com) for queries or collab.
+**Contact [here](mailto:santhoshpakkiri550@gmail.com) for queries or collab.**
